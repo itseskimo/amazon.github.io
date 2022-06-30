@@ -1,0 +1,90 @@
+
+  .sidebar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+  
+  .sidebar-container {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .sidebar-header {
+    
+    font-size: 13px;
+    margin-bottom: 16px;
+    padding-left: 28px;
+    position: relative;
+  }
+
+
+  .sidebar-header>img {
+    object-fit: contain;
+    height: 13px;
+    margin-top: 8px;
+  }
+
+  .sidebar-header > h5 {
+    all: unset;
+    font-family: 'Amazon Ember';
+    font-size: 14px;
+    color: #067D62;
+  }
+  
+  .sidebar-header > p {
+    color: #565959;
+    font-size: 14px;
+  }
+  
+  .sidebar-header > p a {
+    color: #007185;
+    cursor: pointer;
+  }
+  
+  .sidebar-header > p a:hover {
+    color: #C7511F;
+    text-decoration: underline;
+  }
+  
+  .sidebar-header > img {
+    position: absolute;
+    top: -2px;
+    left: 1px;
+  }
+  
+  .sidebar .subtotal {
+    justify-content: flex-start;
+  }
+  
+  .contains-gift {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 15px;
+  }
+  
+  .proceed-buy {
+    all: unset;
+    font-family: 'Amazon Ember';
+    width: 258px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD814;
+    border: 1px solid #FCD200;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+    cursor: pointer;
+  }
+  
+  .proceed-buy:hover {
+    background-color: #F7CA00;
+    border-color: #F2C200;
+  }
