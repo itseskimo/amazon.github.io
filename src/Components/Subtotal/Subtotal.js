@@ -1,12 +1,17 @@
 import React from "react";
 import './Subtotal.css'
-import { useSelector} from "react-redux";
+import { useSelector, useDispatch} from "react-redux";
+import { getTotals } from "../../Redux/cartSlice";
+import { useEffect } from "react";
 
 
 const Subtotal = () => {
-  const items = useSelector((state) => state.cart.cartItems);
-
-  
+  const itemLength = useSelector((state) => state.cart.cartItems);
+  const items = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getTotals());
+  }, [items, dispatch]);
 
   return (
     <div className="sidebar">
@@ -22,11 +27,10 @@ const Subtotal = () => {
           </p>
         </div>
         <div className="subtotal">
-          <h3>Subtotal ({items.length}):</h3>
+          <h3>Subtotal ({itemLength.length}):</h3>
           <div Name="price-container">
             <span>₹</span>
-            <span className="item-price">18,</span>
-            <span>00</span>
+            <span className="item-price">${items.cartTotalAmount}</span>
           </div>
         </div>
 

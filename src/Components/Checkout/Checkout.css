@@ -48,3 +48,36 @@
     font-size: 17px;
     font-weight: 800;
 }
+
+.button{
+    margin-left: 150px;
+    display: flex;
+}
+
+.buttonOn{
+    background: #f0c14b;
+    border-color: #f0c14b;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.count{
+    margin-top: 6px;
+    margin-right: 10px;
+    margin-left:10px ;
+}
+
+.count_product{
+    margin-top: 6px;
+    margin-left: 80px;
+}
+
+.button_white{
+    padding: 2px 4px;
+    background-color: white;
+    border: 1px solid black ;
+    margin-bottom: 2px;
+    display: flex;
+}

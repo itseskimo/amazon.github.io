@@ -1,9 +1,13 @@
 import React from "react";
 import './Checkout.css'
 import { useSelector,useDispatch} from 'react-redux';
-import { remove } from "../../Redux/cartSlice";
+import {  increase, remove } from "../../Redux/cartSlice";
 // import CheckoutProduct from "./CheckoutProduct";
 import Subtotal from "../Subtotal/Subtotal";
+// import { add } from "../../Redux/cartSlice";
+import { decrease } from "../../Redux/cartSlice";
+
+
 
 
 const Checkout=()=> {
@@ -14,6 +18,15 @@ const Checkout=()=> {
         dispatch(remove(item));
     };
     
+    const handleAddToCart = (item) => {
+        dispatch(increase(item));
+      };
+
+      const handleDecreaseCart = (item) => {
+        dispatch(decrease(item));
+      };
+
+
     return(
         <div className="checkout">
             <div className="checkout__left">
@@ -38,9 +51,22 @@ const Checkout=()=> {
                             .map((_, i) => (
                                 <p>⭐</p>
                             ))}
+
+                        <div className="button">
+                        <button className="buttonOn"   onClick={() => handleDecreaseCart(item)}>  - </button>
+                        <div className="count">{item.cartQuantity}</div>
+                        <button className="buttonOn" onClick={() => handleAddToCart(item)}>+</button>
+                        </div>
+
+                        <div className="count_product">
+                        <button className="button_white">
+                        ${Math.floor(item.price * item.cartQuantity)}
+                        </button>
                         </div>
                         
-                        <button onClick={()=> handleRemove(item.id)}>Remove From Basket</button>
+                        </div>
+                        
+                        <button onClick={()=> handleRemove(item)}>Remove From Basket</button>
             
                     </div>
                 </div>
