@@ -17,17 +17,17 @@ const Subtotal = () => {
     <div className="sidebar">
       <div className="sidebar-container">
         <div className="sidebar-header">
-          <img
+          <img className="sideImg"
             src="https://m.media-amazon.com/images/I/41WSwvBZADL.jpg"
             alt=""
           />
-          <h5>Your order is eligible for FREE Delivery.</h5>
-          <p>
+          <h5 className="subtotalPara">Eligible for FREE Delivery.</h5>
+          <p className="subtotalPara">
             Select this option at checkout. <a href="/">Details</a>
           </p>
         </div>
         <div className="subtotal">
-          <h3>Subtotal ({itemLength.length}):</h3>
+          <h3 className="subtotalInfo">Subtotal ({itemLength.length}):</h3>
           <div Name="price-container">
             <span>₹</span>
             <span className="item-price">${items.cartTotalAmount}</span>
