@@ -42,8 +42,18 @@
 }
 
 @media(max-width:700px){
+
+  .product {
+    margin: 10px;
+    padding: 20px;
+    width: 50%;
+    flex: 1;
+    max-height: 300px;
+    min-width: 100px;
+  }
+
   .product__info{
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .product__price {
@@ -54,8 +64,7 @@
     font-size: 11px;
   }
 
-  /* .product > img {
-    max-height: 150px;
-    
-  } */
+  .product > img {
+    max-height: 120px;
+  }
 }
