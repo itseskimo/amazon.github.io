@@ -5,20 +5,6 @@ import "./Home.css";
 const Home = () => {
   return (
     <div>
-    <div className="item-container">
-    <p>All</p>
-    <p>BestSeller</p>
-    <p>Mobiles</p>
-    <p>Prime</p>
-    <p>Electronics</p>
-    <p>New Releases</p>
-    <p>Customer Service</p>
-    <p>Amazon Pay</p>
-    <p>Computers</p>
-    <p>Home & Kitchen</p>
-    <p>Today's Deals</p>
-    </div>
-
     <div className="home">
       <div className="home__container">
         <img

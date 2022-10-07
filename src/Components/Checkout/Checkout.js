@@ -2,13 +2,8 @@ import React from "react";
 import './Checkout.css'
 import { useSelector,useDispatch} from 'react-redux';
 import {  increase, remove } from "../../Redux/cartSlice";
-// import CheckoutProduct from "./CheckoutProduct";
 import Subtotal from "../Subtotal/Subtotal";
-// import { add } from "../../Redux/cartSlice";
 import { decrease } from "../../Redux/cartSlice";
-
-
-
 
 const Checkout=()=> {
     

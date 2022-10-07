@@ -40,3 +40,22 @@
   height: 100px;
   margin-bottom: 15px;
 }
+
+@media(max-width:700px){
+  .product__info{
+    font-size: 14px;
+  }
+
+  .product__price {
+    font-size: 12px;
+  }
+  
+  .product__rating{
+    font-size: 11px;
+  }
+
+  /* .product > img {
+    max-height: 150px;
+    
+  } */
+}

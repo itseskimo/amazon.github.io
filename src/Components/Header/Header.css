@@ -10,7 +10,9 @@
     position: sticky;
     top: 0;
     z-index: 100;
+     overflow: hidden; 
 }
+
 .header_logo{
     width: 100px;
     object-fit: contain;
@@ -42,6 +44,15 @@
     font-size: 13px;
     font-weight: 800;
 }
+
+.header_optionLineOn{
+    font-size: 10px;
+}
+.header_optionLineTw{
+    font-size: 13px;
+    font-weight: 800;
+}
+
 .header_optionBasket{
     display: flex;
     align-items: center;
@@ -71,3 +82,31 @@
     background-color: light grey;
     margin-top: 1px;
 }
+
+
+@media (max-width:700px){
+    .header_logo{
+        width: 60px;
+    }
+    
+    .select{
+        width: 20px;
+    }
+    
+    .header_search{
+    height: 20px;
+    }
+    
+    .select option{
+        font-size: 10px;
+     }
+    
+    
+    .header_optionLineOn{
+        display: none;
+    }
+    .header_optionLineTw{
+        display: none;
+    }
+    
+    }

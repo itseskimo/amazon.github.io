@@ -14,7 +14,7 @@ const Footer = () => {
           <p>Amazon Devices</p>
           <p>Amazon Tours</p>
         </div>
-        <div>
+        <div className="footerHidden">
           <p className="footer__title">Make Money with Us</p>
           <p>Sell products on Amazon</p>
           <p>Become an Affiliate</p>
