@@ -61,25 +61,13 @@ const Checkout=()=> {
                         
                         </div>
                         
-                        <button onClick={()=> handleRemove(item)}>Remove From Basket</button>
+                        <button className="buttonRemove" onClick={()=> handleRemove(item)}>Remove From Basket</button>
             
                     </div>
                 </div>
 
 
                 ))}         
-               
-                  {/* { products.map((item) => (
-                    <CheckoutProduct 
-                        id={item.id}
-                        title={item.title}
-                        image={item.image}
-                        price={item.price}
-                        rating={item.rating}
-                        
-                    />  
-                ))}         
-                */}
             
                 </div>
             </div>
@@ -87,8 +75,6 @@ const Checkout=()=> {
             <div className="checkout__right">
                  <Subtotal/>
             </div>
-
-
         </div>
     )
 };

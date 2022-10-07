@@ -61,6 +61,8 @@
     padding: 6px;
     border-radius: 5px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .count{
@@ -87,4 +89,43 @@
 .checkout__title{
     font-size: 14px;
    }
+
+   .checkoutProduct_image{
+    width: 100px;
+    height: 100px;
+   }
+
+   .checkoutProduct_title{
+    font-size: 9px;
+   }
+
+  .checkoutProduct_price{
+    font-size: 13px;
+  }
+  .checkoutProduct_rating{
+    font-size: 10px;
+  }
+
+  .checkoutProduct_info > button{
+    height: 13px;
+    width: 85px;
+    font-size: 6px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    margin-left: 40px;
+}
+
+.buttonOn{
+    height: 10px;
+    width: 10px;
+    padding-bottom: 6px;
+}
+
+.count{
+    margin-top: 3px;
+}
 }
