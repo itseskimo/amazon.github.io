@@ -22,13 +22,13 @@
 
 .checkoutProduct{
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .checkoutProduct_info{
     padding-left: 20px;
 }
-.checkoutProduct_info > button{
+.buttonRemove{
     background: #f0c14b;
     border: 1px solid;
     padding: 7px;
@@ -67,6 +67,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 30px;
+    width: 30px;
 }
 
 .count{
@@ -88,6 +90,15 @@
     border: 1px solid black ;
     margin-bottom: 2px;
     display: flex;
+}
+
+.divLine{
+height: 1px;
+width: 100%;
+background-color:grey;
+margin-top: 90px;
+position: absolute;
+left: 0;
 }
 
 @media(max-width:700px){
@@ -112,15 +123,15 @@
     font-size: 10px;
   }
 
-  .checkoutProduct_info > button{
-    height: 13px;
+  .buttonRemove{
+    height: 20px;
     width: 85px;
     font-size: 6px;
     font-weight: bold;
     display: flex;
     align-items: center;
-    position: absolute;
-    left: 130px;
+    /* position: absolute;
+    left: 130px; */
 }
 
 .button{
@@ -128,8 +139,8 @@
 }
 
 .buttonOn{
-    height: 10px;
-    width: 10px;
+    height: 20px;
+    width: 20px;
     padding-bottom: 6px;
 }
 
@@ -140,11 +151,11 @@
 .count_product{
     left: 230px;
     display: flex;
-    margin-top: 3px;
+    margin-top: 1px;
 }
 
 .button_white{
-    height: 12px;
+    height: 17px;
     width: 30px;
     font-size: 8px;
     align-items: center;

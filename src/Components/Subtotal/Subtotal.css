@@ -3,12 +3,11 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    /* background-color: black; */
   }
   
   .sidebar-container {
     background-color: #fff;
-    padding: 20px;
+    padding: 15px;
   }
   
   .sidebar-header {
@@ -113,10 +112,13 @@
 
 .subtotalPara{
   font-size: 9px !important;
-  display: none;
+  display: none !important;
 }
 
 .sidebar-container{
   padding-top: 0;
+}
+.sideImg{
+  display: none;
 }
  } 
