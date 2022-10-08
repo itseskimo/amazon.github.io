@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    cartItems:[],
+    cartItems : localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [] ,
+    // cartItems:[],
     cartTotalQuantity: 0,
     cartTotalAmount: 0,
   };
@@ -11,9 +12,7 @@ const cartSlice = createSlice({
     initialState,
     
     reducers: {
-        // add(state, action) {
-        //     state.cartItems.push(action.payload);
-        // },
+        
           add(state, action) {
             let existingIndex = state.cartItems.findIndex(
               (item) => item.id === action.payload.id
@@ -25,6 +24,7 @@ const cartSlice = createSlice({
               let tempProductItem = { ...action.payload, cartQuantity: 1 };
               state.cartItems.push(tempProductItem);
             };
+            localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
           },
 
 
@@ -33,18 +33,14 @@ const cartSlice = createSlice({
           increase(state, action) {
             const tempIndex = state.cartItems.findIndex( (item) => item.id === action.payload.id );
             state.cartItems[tempIndex].cartQuantity +=1;
+            localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
           },
 
 
+          
 
 
-
-        //   remove (state, action) {
-        //     const nextCart = state.cartItems.filter( (item) => {
-        //         return item._id !== action.payload._id;
-        //     });
-        //     state.cartItems = nextCart;
-        // },
+      
         remove(state, action) {
           state.cartItems.map((cartItem) => {
             if (cartItem.id === action.payload.id) {
@@ -56,6 +52,7 @@ const cartSlice = createSlice({
             }
             return state;
           });
+          localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
         },
 
 
@@ -78,13 +75,13 @@ const cartSlice = createSlice({
           state.cartTotalAmount=parseFloat(cartTotalAmount.toFixed(2))
           state.cartTotalQuantity=cartTotalQuantity
 
-          // total = parseFloat(total.toFixed(2));
-          // state.cartTotalQuantity = quantity;
-          // state.cartTotalAmount = total;
         },
 
 
-
+        clearCart (state) {
+          state.cartItems = [];         
+          localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
+          },
 
 
         decrease(state, action) {
@@ -103,6 +100,7 @@ const cartSlice = createSlice({
     
             state.cartItems = nextCartItems; 
             };
+            localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
           }   
           
           
@@ -112,7 +110,5 @@ const cartSlice = createSlice({
     },
 });
 
-export const { add, remove, decrease,increase,getTotals} = cartSlice.actions;
+export const { add, remove, decrease,increase,getTotals,clearCart} = cartSlice.actions;
 export default cartSlice.reducer;
-
-

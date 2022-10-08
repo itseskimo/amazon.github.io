@@ -68,3 +68,36 @@
     max-height: 120px;
   }
 }
+
+ @media(max-width:500px){
+
+  .product {
+    width: 40%;
+    max-height: 200px;
+    min-width: 100px;
+  }
+
+  .product__info{
+    font-size: 10px;
+  }
+
+  .product__price {
+    font-size: 10px;
+  }
+  
+  .product__rating{
+    font-size: 8px;
+  }
+
+  .product > img {
+    max-height: 70px;
+  }
+
+  .product > button {
+    height: 22px;
+    width: 68px;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+} 
