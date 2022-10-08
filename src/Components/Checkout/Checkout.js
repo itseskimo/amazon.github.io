@@ -35,7 +35,7 @@ const Checkout=()=> {
                     <div className="checkoutProduct" key={item.id}>
                     <img className="checkoutProduct_image" src={item.image} alt=''/>
                     <div className="checkoutProduct_info">
-                        <div>
+                        <div className="check">
                         <p className="checkoutProduct_title">{item.title}</p>
                         <p className="checkoutProduct_price">
                             <small>$</small>
