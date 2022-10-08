@@ -5,6 +5,8 @@
     padding: 20px;
     background-color: white;
     height: max-content;
+    position: relative;
+    overflow: hidden;
 }
 
 .checkout__ad{
@@ -50,8 +52,10 @@
 }
 
 .button{
-    margin-left: 150px;
+    /* margin-left: 150px; */
+    position: absolute;
     display: flex;
+    left: 450px;
 }
 
 .buttonOn{
@@ -74,6 +78,8 @@
 .count_product{
     margin-top: 6px;
     margin-left: 80px;
+    position: absolute;
+    left: 550px;
 }
 
 .button_white{
@@ -113,10 +119,12 @@
     font-weight: bold;
     display: flex;
     align-items: center;
+    position: absolute;
+    left: 130px;
 }
 
 .button{
-    margin-left: 40px;
+    left: 220px;
 }
 
 .buttonOn{
@@ -127,5 +135,20 @@
 
 .count{
     margin-top: 3px;
+}
+
+.count_product{
+    left: 230px;
+    display: flex;
+    margin-top: 3px;
+}
+
+.button_white{
+    height: 12px;
+    width: 30px;
+    font-size: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
 }
 }
