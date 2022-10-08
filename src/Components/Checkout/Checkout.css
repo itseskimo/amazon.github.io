@@ -145,8 +145,6 @@ left: 0;
     font-weight: bold;
     display: flex;
     align-items: center;
-    /* position: absolute;
-    left: 130px; */
 }
 .check{
     position: absolute;
@@ -178,7 +176,7 @@ left: 0;
 .button_white{
     height: 17px;
     width: 30px;
-    font-size: 8px;
+    font-size: 10px;
     align-items: center;
     justify-content: center;
     padding: 2px 2px;

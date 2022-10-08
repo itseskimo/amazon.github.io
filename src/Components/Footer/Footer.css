@@ -3,11 +3,11 @@
   max-width: 1500px;
   color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-left: 70px;
   margin-right: 70px;
   padding: 2rem;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 
@@ -62,7 +62,7 @@
    
 @media(max-width:700px){
 .footer__title{
-  font-size: 14px;
+  font-size: 12px;
 }
 
 }
