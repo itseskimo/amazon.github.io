@@ -35,6 +35,7 @@ const Checkout=()=> {
                     <div className="checkoutProduct" key={item.id}>
                     <img className="checkoutProduct_image" src={item.image} alt=''/>
                     <div className="checkoutProduct_info">
+                        <div>
                         <p className="checkoutProduct_title">{item.title}</p>
                         <p className="checkoutProduct_price">
                             <small>$</small>
@@ -62,13 +63,14 @@ const Checkout=()=> {
                         </div>
                         
                         <button className="buttonRemove" onClick={()=> handleRemove(item)}>Remove From Basket</button>
-            
+                      </div>
                     </div>
                 </div>
+                
 
 
                 ))}         
-            
+           
                 </div>
             </div>
 
