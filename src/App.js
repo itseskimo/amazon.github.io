@@ -9,6 +9,8 @@ import Footer from './Components/Footer/Footer';
 import Checkout from './Components/Checkout/Checkout';
 import { Provider } from 'react-redux';
 import store from './Redux/store';
+
+
 function App() {
   return (
       <div className="app">
